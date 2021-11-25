@@ -1,0 +1,24 @@
+.d-list label {
+  display: block;
+  font-size: 18px;
+}
+
+.d-list input {
+  display: block;
+  width: 600px;
+  margin-bottom: 20px;
+  border: 2px solid #050a2e;
+  padding: 10px;
+}
+
+form button {
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ef8023;
+  box-shadow: 0 4px 6px grey;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
