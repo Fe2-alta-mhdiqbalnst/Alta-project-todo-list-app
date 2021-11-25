@@ -1,0 +1,97 @@
+
+
+.buttonnav{
+    background-color: #050a2e;
+    height: 100vh;
+    /* background-image: linear-gradient(#050a2e, blue); */
+}
+
+.buttonnav .bt-signup{
+    background-color: white;
+    color: #ef8023;
+    border: none;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+    /* display: block; */
+}
+
+.buttonnav .bt-signup:hover{
+    background-color: white;
+    color: #ef8023;
+    border: none;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.buttonnav .bt-signup:active{
+    background-color: white;
+    color: #ef8023;
+    border: none;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+
+.buttonnav .bt-signin{
+    color: white;
+    background-color: #050a2e;
+    border: none;
+    text-decoration: none;
+    text-align-last: center;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.buttonnav .bt-signin:hover{
+    background-color: white;
+    color: #ef8023;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+}
+
+.signup-form{
+    background-color: white;
+    /* height: 100vh; */
+}
+
+.signup-form .bt-submit{
+    color: white;
+    background-color: #ef8023;
+    border: none;
+}
+
+.signup-form .bt-submit:hover{
+    color: #ef8023;
+    background-color: #050a2e;
+    border: none;
+}
+
+.app-name{
+    color: #ef8023;
+    background: -webkit-linear-gradient( #EA4B3B, #FCBF13);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.signup-form .txt{
+    text-align-last: center;
+}
+
+.signup-form .txt .move-signin{
+    text-decoration: none;
+    color: #ef8023;
+}
+
+.signup-form .txt .move-signin:hover{
+    text-decoration: none;
+    color: #EA4B3B;
+}
