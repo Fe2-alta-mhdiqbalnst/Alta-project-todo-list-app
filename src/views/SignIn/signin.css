@@ -1,0 +1,105 @@
+
+
+.buttonnavin{
+    background-color: #050a2e;
+    height: 100vh;
+    /* background-image: linear-gradient(#050a2e, blue); */
+}
+
+.buttonnavin .bt-signin{
+    background-color: white;
+    color: #ef8023;
+    border: none;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+    /* display: block; */
+}
+
+.buttonnavin .bt-signin:hover{
+    background-color: white;
+    color: #ef8023;
+    border: none;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.buttonnavin .bt-signin:active{
+    background-color: white;
+    color: #ef8023;
+    border: none;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+
+.buttonnavin .bt-signup{
+    color: white;
+    background-color: #050a2e;
+    border: none;
+    text-decoration: none;
+    text-align-last: center;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+    /* display: block; */
+}
+
+.buttonnavin .bt-signup:hover{
+    background-color: white;
+    color: #ef8023;
+    border-top-left-radius: 50em; /* 50% of height */
+    border-bottom-left-radius: 50em; /* 50% of height */
+}
+
+.login-form{
+    background-color: white;
+    /* height: 100vh; */
+}
+
+.login-form .bt-submit{
+    color: white;
+    background-color: #ef8023;
+    border: none;
+}
+
+.login-form .bt-submit:hover{
+    color: #ef8023;
+    background-color: #050a2e;
+    border: none;
+}
+
+.app-name{
+    font-family: 'Lobster', cursive;
+    color: #ef8023;
+    text-align-last: center;
+    background: -webkit-linear-gradient( #EA4B3B, #FCBF13);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-form .login-form-form .app-logo{
+    display:flex;
+   justify-content:center; /* horizontally center */
+   align-items:center;    /* vertically center */
+}
+
+.login-form .txt{
+    text-align-last: center;
+}
+
+.login-form .txt .move-signup{
+    text-decoration: none;
+    color: #ef8023;
+}
+
+.login-form .txt .move-signup:hover{
+    text-decoration: none;
+    color: #EA4B3B;
+}
