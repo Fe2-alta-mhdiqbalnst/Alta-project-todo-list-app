@@ -1,0 +1,142 @@
+.bg-list {
+  display: flex;
+  align-items: center;
+  margin-left: 320px;
+  height: 100vh;
+  color: #050a2e;
+  font-weight: bold;
+}
+
+.w-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 95%;
+  margin-left: 20px;
+  /* background-color: #050a2e; */
+  border-radius: 20px;
+  box-shadow:0px 0px 10px #8f735d;
+}
+
+.page {
+  width: 90%;
+  height: 96%;
+}
+
+.w-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 2px solid #050a2e;
+  color: #050a2e ;
+}
+
+.w-header button {
+  float: right;
+  padding: 10px;
+  background-color: #ef8023;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.w-header img {
+  width :22px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.img-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ef8023;
+  border-radius: 50px;
+  background-color: #ef8023;
+}
+
+.header label {
+  padding-left: 20px;
+  font-size: 35px;
+}
+
+.page-list {
+  margin-top: 50px;
+  font-size: 18px;
+}
+.page-list h2 {
+  color: #ef8023;
+}
+
+.w-container {
+  margin-bottom: 30px;
+}
+
+.container {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+ 
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border :2px solid #050a2e;
+  border-radius: 50px;
+}
+
+.checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ef8023;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ef8023;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
