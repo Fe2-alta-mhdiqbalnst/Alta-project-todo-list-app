@@ -1,0 +1,130 @@
+.bg-sidebar {
+  position: fixed;
+  display: flex;
+  min-width: 320px;
+  max-width: 320px;
+  height: 100vh;
+  background-color: #0b0f39;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.wrapper-sidebar {
+  position: relative;
+  margin: 50px 20px 0px 20px;
+  width: 300px;
+  /* border: 1px solid red; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 15px;
+  border-bottom: 1px solid ;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to left, #222fbe, #da8e4f );
+  font-family: 'Lobster', cursive;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+.logo img {
+  width: 30px;
+}
+
+.logo label {
+  background: -webkit-linear-gradient(#ffffff, #ef8023);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.w-dashboard label {
+  padding-left: 5px;
+}
+
+.active {
+  background-color: #050a2e ;
+  color: #ef8023;
+  border-radius: 20px;
+}
+
+.menu-dashboard {
+  display: flex;
+  padding: 15px;
+  margin-bottom: 50px ;
+  border-radius: 10px;
+}
+
+.menu-dashboard label:hover {
+  cursor: pointer;
+  color: #ef8023;
+}
+
+.list-task p {
+  padding-left: 15px;
+  font-weight: 400;
+  color: #ef8023;
+}
+
+.task {
+  display: flex;
+  padding: 15px;
+}
+
+.task label {
+  cursor: pointer;
+}
+
+.task label:hover {
+  color: #ef8023;
+}
+
+.w-user {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 60px;
+}
+
+.w-user p {
+  padding-left: 20px;
+  color: #ffff;
+}
+
+.user-img img {
+  width: 30px;
+}
+
+.logout {
+  margin-left: 100px;
+}
+
+.logout:hover {
+  padding: 10px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ef8023;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-active {
+  display: inline;
+}
