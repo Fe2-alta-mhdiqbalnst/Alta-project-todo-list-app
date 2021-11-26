@@ -8,7 +8,7 @@ import Image from "react-bootstrap/Image";
 import Logo from "../../images/to-do-list.png";
 import "./signin.css";
 
-const SignIn = (props) => {
+const SignIn = () => {
 
   const navigate = useNavigate()
 
@@ -36,12 +36,7 @@ const SignIn = (props) => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  const { isSignIn } = useSelector(state => state.auth);
-  const { message } = useSelector(state => state.message)
-  
-  const dispatch = useDispatch();
+  // const [loading, setLoading] = useState(false);
 
   const onChangeEmail = (e) => {
     const email = e.target.value;
@@ -56,19 +51,26 @@ const SignIn = (props) => {
   const handleSignIn = (e) => {
     e.preventDefault();
 
-    const {email, password}
     const objData = {
-      email: email,
-      password: password
+      "email": email,
+      "password": password
     }
 
     console.log(objData);
 
-  }
+  axios.post('https://peaceful-citadel-71310.herokuapp.com/signin',objData)
+  .then((data) => {
+    console.log(data.message);
+    navigate(`/`);
+  })
+  .catch(err => {
+    console.log(err);
+  })
+}
 
-  if (isSignIn) {
-    return navigate("/");
-  }
+  // if (isSignIn) {
+  //   return navigate("/");
+  // }
 
     return (
       <div className="w-100 row">
@@ -85,7 +87,7 @@ const SignIn = (props) => {
         </Col>
 
         <Col className="login-form col-9 d-flex justify-content-center align-items-center">
-        <Form className="col-7 ">
+        <Form className="col-7 " action="#" onSubmit={(e) => handleSignIn(e)}>
           <Image src={Logo} alt="logo" className="app-logo d-block mx-auto img-fluid w-30"/>
           <br />
           <h3 className="app-name"><strong>to-do list app</strong></h3>
@@ -109,7 +111,7 @@ const SignIn = (props) => {
           className="inpt-password"/>
           <br />
           
-          <Button className="bt-submit col-12 p-2">
+          <Button type="submit" className="bt-submit col-12 p-2">
           Get Started
           </Button>
           
@@ -118,53 +120,6 @@ const SignIn = (props) => {
           </p>
           
         </Form>
-
-        {/* <Form onSubmit={handleSignIn} ref={form}>
-          <div className="form-group">
-            <label htmlFor="email">email</label>
-            <Input
-              type="text"
-              className="form-control"
-              name="email"
-              value={email}
-              onChange={onChangeEmail}
-              validations={[required]}
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="password">Password</label>
-            <Input
-              type="password"
-              className="form-control"
-              name="password"
-              value={password}
-              onChange={onChangePassword}
-              validations={[required]}
-            />
-          </div>
-
-          <div className="form-group">
-            <button className="btn btn-primary btn-block" disabled={loading}>
-              {loading && (
-                <span className="spinner-border spinner-border-sm"></span>
-              )}
-              <span>Sign In</span>
-            </button>
-          </div>
-
-          {message && (
-            <div className="form-group">
-              <div className="alert alert-danger" role="alert">
-                {message}
-              </div>
-            </div>
-          )}
-          <CheckButton style={{ display: "none" }} ref={checkBtn} />
-          <p className="txt">Dont have any account? 
-            <Link to="/signup" className="move-signup"><strong>  Sign Up</strong></Link>
-          </p>
-        </Form> */}
         </Col>
       </div>
     );
