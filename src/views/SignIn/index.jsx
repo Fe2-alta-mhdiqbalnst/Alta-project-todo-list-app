@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, {useState} from "react";
 
 import axios from "axios";
 import { Col, Form, Button, Row} from "react-bootstrap";
@@ -11,10 +10,6 @@ import "./signin.css";
 const SignIn = () => {
 
   const navigate = useNavigate()
-
-  const goToHome = () => {
-    navigate("/");
-  }
 
   const required = (value) => {
     if (!value) {
@@ -59,15 +54,16 @@ const SignIn = () => {
     console.log(objData);
 
   axios.post('https://peaceful-citadel-71310.herokuapp.com/signin',objData)
-  .then((data) => {
-    console.log(data.message);
+  .then((response) => {
+    console.log(response.data.token);
+
+    localStorage.setItem("token", response.data.token)
     navigate(`/`);
   })
   .catch(err => {
     console.log(err);
   })
-}
-
+};
   // if (isSignIn) {
   //   return navigate("/");
   // }
